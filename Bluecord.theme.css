@@ -1,4 +1,4 @@
-//META{"name":"Bluecord","description":"Changes alot of discords CSS to blue.", "author":"Trippehh", "version":"1.1.2"}*//{}
+//META{"name":"Bluecord","description":"Changes alot of discords CSS to blue.", "author":"Trippehh", "version":"1.1.4"}*//{}
 
 .theme-dark .chat>.content .messages .message-group .comment .markup {
     color: #4497ef;
@@ -707,5 +707,432 @@
 
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover {
     background-color: #4754f0!important;
+}
+
+.new-messages-indicator.new-messages-indicator-mention {
+    background-color: #106a9e;
+}
+
+.form .btn.red:hover {
+    background-color: #28a3bf;
+}
+
+.invite-button-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #e0f2ff;
+    margin-right: 10px;
+    border: 1px solid #78bcf3;
+    position: relative;
+    -webkit-transition: border-color .2s;
+    transition: border-color .2s;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.invite-button.join:hover .invite-button-icon {
+    border-color: #6db1e4;
+}
+
+.invite-button-icon:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 19px;
+    display: table;
+    width: 9px;
+    height: 24px;
+    border: 3px solid #094e75;
+    border-top-width: 0;
+    border-left-width: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: .5;
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s;
+}
+
+.invite-button-icon.expired {
+    border-color: #0e6eb7;
+    background-color: #056fb7;
+}
+
+.invite-button.expired .invite-button-header {
+    color: #09558e;
+    text-transform: uppercase;
+}
+
+.theme-dark .invite-button .invite-button-header {
+    color: hsla(208, 100%, 72%, 0.7);
+}
+
+.theme-dark .invite-button .invite-button-body {
+    color: hsla(205, 88%, 60%, 0.5);
+}
+
+.theme-dark .message-group a {
+    color: #3cbdef;
+}
+
+.theme-dark .chat form {
+    border-top: 1px solid hsla(200, 100%, 68%, 0.06);
+}
+
+.chat form {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: flex;
+    box-shadow: 0 -1px 0 rgba(2, 44, 101, 0.1);
+    margin: 0 20px;
+    position: relative;
+}
+
+.chat .empty-message h1 {
+    font-weight: 600;
+    color: #4190e4;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.theme-dark .chat .empty-message {
+    border-color: hsla(223, 75%, 40%, 0.02);
+    background: url(/assets/5eed3f20bc3c75fd5ff63c60df8f679d.png) 0 100% no-repeat,url(/assets/129bf63f677720a34bc7ffeb74468a0e.png) 100% 100% no-repeat;
+    background-size: 192px 80px,216px 64px;
+}
+
+.chat .empty-message {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 14px;
+    height: 95px;
+    box-sizing: border-box;
+    border-bottom-style: solid;
+    border-width: 0 0 1px;
+    border-color: #0a6592;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background: url(/assets/012426a1f0780d7d36be6c39d9c1e6ed.png) 0 100% no-repeat,url(/assets/6bf0150b5ab7622ea15150094e3c4850.png) 100% 100% no-repeat;
+    background-size: 192px 80px,216px 64px;
+}
+
+.instant-invites .instant-invites-header {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 20px;
+    font-weight: 700;
+    color: #0a3e84;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-right: -17px;
+}
+
+.instant-invites .instant-invites-list .instant-invite .countdown {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1971a7;
+}
+
+.instant-invites .instant-invites-list .instant-invite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 62px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #144565;
+}
+
+.instant-invites .instant-invites-list .instant-invite .countdown.countdown-never {
+    color: #1569b3;
+    font-family: Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 700;
+    color: #2e69b7;
+    padding: 0 40px;
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 57px;
+    border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0 2px 0 hsla(200,9%,93%,.25);
+}
+
+.guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(19, 78, 171, 0.15);
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 120px;
+    line-height: 16px;
+}
+
+.protip {
+    font-size: 12px;
+    font-weight: 600;
+    color: #165782;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.guild-settings-modal-members h6 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #2889c7;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.search-bar.search-bar-light input {
+    background: 0 0;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+    color: #1b569a;
+    line-height: 15px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.member-roles .member-role {
+    background-color: #f3f3f3;
+    border-radius: 3px;
+    border: 1px solid #dbdde1;
+    font-size: 12px;
+    line-height: 12px;
+    color: #265286;
+    font-weight: 600;
+    padding: 2px 4px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.region-select-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #196698;
+}
+
+.avatar-uploader small {
+    display: block;
+    font-size: 10px;
+    color: #143e75;
+}
+
+.has-value>.Select-control>.Select-placeholder {
+    color: #044c77;
+}
+
+.has-value>.Select-control>.Select-placeholder {
+    color: #056379;
+}
+
+.form .Select-option, .form .has-value .Select-placeholder {
+    color: #055a7b;
+}
+
+.form .control-group .help-text {
+    font-size: 11px;
+    line-height: 13px;
+    color: #08326b;
+    margin: 15px 0;
+}
+
+.form .btn.green {
+    background-color: #0e74ad;
+}
+
+.clipboard-input-inner input {
+    padding-left: 6px;
+    outline: 0;
+    border: none;
+    color: #0d4080;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    line-height: 14px!important;
+}
+
+.guild-settings-modal-emoji .guild-settings-modal-emoji-header h6 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #064394;
+    display: block;
+}
+
+.guild-settings-modal-emoji .no-emoji p {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(1, 27, 49, 0.15);
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 120px;
+    line-height: 16px;
+}
+
+.guild-settings-modal-emoji .guild-settings-modal-emoji-header p {
+    font-size: 12px;
+    color: rgba(2, 27, 68, 0.6);
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.guild-settings-modal-members .guild-settings-modal-list .member .member-username {
+    color: #063b50;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.guild-settings-modal-members .guild-settings-modal-list .member+.member {
+    border-top: 1px solid #d4f1ff;
+}
+
+.guild-settings-modal .emoji-row .btn.btn-danger, .guild-settings-modal .member-buttons .btn.btn-danger {
+    border: 1px solid #daf0fc;
+    color: #47b8f0;
+}
+
+.guild-settings-modal .emoji-row .btn, .guild-settings-modal .member-buttons .btn {
+    min-width: 60px;
+    padding: 7px 9px;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #2677c7;
+    border-radius: 3px;
+    color: #737f8d;
+    font-size: 14px;
+    -webkit-transition: none;
+    transition: none;
+}
+
+#settings-roles h1 {
+    color: #2670d2;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    -ms-flex: 1;
+    flex: 1;
+    margin: 20px 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.channel-notification-settings .content label {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    display: block;
+    color: #075a84;
+    margin-right: 5px;
+    max-width: 265px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+}
+
+.notification-settings-modal .notification-settings-modal-channel-settings-header label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #07486f;
+    display: block;
+}
+
+#instant-invite-modal .expire-text {
+    font-size: 11px;
+    line-height: 13px;
+    color: #0a5c75;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#instant-invite-modal .copy {
+    height: 46px;
+    width: auto;
+    padding: 0 15px;
+    background-color: #07619e;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 46px;
+}
+
+.checkbox .checkbox-inner input[type=checkbox]:checked+span {
+    background-color: #0a6598;
+    border-color: #0a6598;
+}
+
+#instant-invite-modal .clipboard-input-inner input {
+    color: #0d4080;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+#user-profile-modal .actions .btn:hover {
+    background: #697ec4;
+}
+
+#user-profile-modal .actions .btn.add-friend {
+    background: #21ade4;
+}
+
+#user-profile-modal .actions .btn.add-friend:hover {
+    background: #0c81af;
+}
+
+.note textarea {
+    outline: 0;
+    resize: none;
+    border: none;
+    background: 0 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #133c73;
+    padding: 2px 10px;
+    width: 100%;
+    max-height: 88px;
+    box-sizing: border-box;
 }
 
