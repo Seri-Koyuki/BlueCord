@@ -8,4 +8,5 @@ Trippehh#1782
 >https://gyazo.com/1ff3dccf741943b1cbb23b89c8f73ee0
 
 ## Info
-My official discord is https://discord.gg/pSrs9AU
+>My official discord is https://discord.gg/pSrs9AU
+Make sure you are using the DARK theme
